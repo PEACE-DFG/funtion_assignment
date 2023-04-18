@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body{
+            background-color: aqua;
+           
+        }
+        .one{
+            border: 2px solid black;
+            width: fit-content;
+            padding: 50px;
+            border-radius: 50px;
+            background-color: aliceblue;
+            margin-top: 200px;
+
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <div class="one">
+    <p>The Sum of the two operands is: <span id="sum"> </span> </p>
+    <button onclick="plus( 4,5)"> Addition</button>
+    <p>The Subtraction of the two operands is: <span id="subtract"> </span> </p>
+    <button onclick="minus(5,4)" > Subtraction</button>
+    <p>The modulus of the two operands is: <span id="modulus"> </span> </p>
+    <button onclick="modulus(15,4)" > modulus</button>
+    <p>The exponential of the two operands is: <span id="expo"> </span> </p>
+    <button onclick="expo(5,4)" > Exponential</button>
+    <p>The division of the two operands is: <span id="division"> </span> </p>
+    <button onclick="divide(5,4)" > division</button>
+    </div>
+
+    <script>
+        function plus(a,b){
+            document.getElementById('sum').innerHTML=a+b;
+        }
+        function minus(a,b){
+            document.getElementById('subtract').innerHTML=a-b;
+        }
+        function modulus (a,b){
+            document.getElementById('modulus').innerHTML=a%b;
+        }
+        function expo(a,b){
+            document.getElementById('expo').innerHTML=a**b;
+        }
+        function divide(a,b){
+            document.getElementById('division').innerHTML=a/b;
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
